@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font: 20px/1 sans-serif;
+}
+
+body{
+    background-color: #e0ebe8;
+}
+
+img{
+    width: 100%;
+}
+
+.headshot{
+    width: 20%;
+}
+
+p{
+    color: #401231;
+}
+
+ul{
+    list-style: none;
+}
+
+.main-header{
+    background-color: #49977f;
+    padding: 1rem 2rem;
+}
+
+.main-header__title{
+    color: #fdbd1c;
+}
+.wrapper{
+    margin: 0 auto;
+    max-width: 45rem;
+    width: 90%;
+}
