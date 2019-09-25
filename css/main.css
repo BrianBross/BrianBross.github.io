@@ -1,43 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+/* color scheme map:
+#e0ebe8 - light
+   body background color
+#b90e83 - pink purple
+   hyperlink color
+#fdbd1c - orange
+   title
+   hyperlink hover over
+#401231 - dark purple
+   text color
+#49977f - dark green
+   header background color
+  */
+
+
+/* General Page Formatting */
 html{
-    font: 20px/1 sans-serif;
+    --bodybackgroundcolor: #e0ebe8;
+    --linkcolor: #b90e83;
+    --title: #fdbd1c;
+    --textcolor: #401231;
+    --headerbackgroundcolor: #49977f;
+    font: 20px/1 "Ubuntu", sans-serif;
 }
-
 body{
-    background-color: #e0ebe8;
-}
-
-img{
-    width: 100%;
-}
-
-.headshot{
-    width: 20%;
-}
-
-p{
-    color: #401231;
-}
-
-ul{
-    list-style: none;
-}
-
-.main-header{
-    background-color: #49977f;
-    padding: 1rem 2rem;
-}
-
-.main-header__title{
-    color: #fdbd1c;
+    background-color: var(--bodybackgroundcolor);
 }
 .wrapper{
     margin: 0 auto;
     max-width: 45rem;
     width: 90%;
+    display: grid;
+    grid-template-rows: 5rem auto 2rem;
+    min-height: 100vh;
+}
+
+
+/*Tag Formatting*/
+p{
+    color: var(--textcolor);
+    margin: 1rem auto;
+}
+a{
+    color: var(--linkcolor);
+    text-decoration: none;
+}
+a:hover{
+    color: var(--title);
+}
+img{
+    width: 100%;
+}
+h2{
+    margin-bottom: 1rem;
+}
+ul{
+    list-style: none;
+}
+article{
+    margin: 3rem auto;
+    max-width: 40rem;
+    width: 85%;
+    display: flex;
+}
+hr{
+    width:90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: .5rem;
+    border-radius: 6px;
+    background-color: var(--headerbackgroundcolor);
+}
+figcaption{
+    font-size: .5rem;
+}
+
+
+/* Class Formatting */
+.personal-info{
+    display: flex;
+    align-items: center;
+}
+.personal-info__headshot-caption{
+    display: none;
+}
+.personal-info__image-container{
+    width:60rem;
+    /* border-radius: 50%;
+    overflow: hidden; */
+    margin-right: 1rem;
+}
+.main-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--headerbackgroundcolor);
+    padding: 1rem 2rem;
+}
+.main-header__title{
+    color: var (--title);
+}
+.navigation__list{
+    display: flex;
+}
+.navigation__list-item{
+    margin-right: .8rem;
+
+}
+.navigation__list-item:last-child{
+    margin-right: 0;
+}
+.projects__list > *{
+    flex: 1 1 0;
+}
+.projects__list-item{
+    margin: 2rem auto;
 }
