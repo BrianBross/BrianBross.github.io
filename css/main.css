@@ -77,8 +77,10 @@ hr{
     border-radius: 6px;
     background-color: var(--headerbackgroundcolor);
 }
-figcaption{
-    font-size: .5rem;
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -92,8 +94,6 @@ figcaption{
 }
 .personal-info__image-container{
     width:60rem;
-    /* border-radius: 50%;
-    overflow: hidden; */
     margin-right: 1rem;
 }
 .main-header{
@@ -116,9 +116,20 @@ figcaption{
 .navigation__list-item:last-child{
     margin-right: 0;
 }
-.projects__list > *{
-    flex: 1 1 0;
+.projects{
+    display: flex;
+}
+.projects__image-caption{
+    display: none;
 }
 .projects__list-item{
     margin: 2rem auto;
+}
+.contact-me{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.back-to-top-button{
+    align-self: right;
 }

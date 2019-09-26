@@ -23,7 +23,7 @@
 
     <main>
       <article class="personal-info">
-          <figure class="personal-info__image-container" id="About-Me">
+        <figure class="personal-info__image-container" id="About-Me">
           <img class="personal-info__headshot" src="./images/BrossHeadshot1.jpeg" alt="Brian Bross Headshot">
           <figcaption class="personal-info__headshot-caption">Brian Bross</figcaption>
         </figure>
@@ -36,7 +36,8 @@
           together!
         </p>
       </article>
-      <button a href="#TopNav">Back To Top</button>
+      
+      <button class="back-to-top-button"><a href="#TopNav">Back To Top</a></button>
 
       <hr>
 
@@ -54,9 +55,10 @@
               return to their previously saved state upon loading the application, and managing multiple dragon caves
               to illicit inter-dragon activities.
             </p>
-            <figure>
-              <img src="./images/VirtualPetScreenShot.PNG" alt="Screen Shot of Virtual Pet App">
-              <figcaption>Screen Shot of Virtual Pet App</figcaption>
+            <figure class="projects__image-container">
+              <img class="projects__image-item" src="./images/VirtualPetScreenShot.PNG"
+                alt="Screen Shot of Virtual Pet App">
+              <figcaption class="projects__image-caption">Screen Shot of Virtual Pet App</figcaption>
             </figure>
           </li>
           <li class="projects__list-item">
@@ -68,22 +70,27 @@
               will include a time feature that will effect the patient's health levels, and will allow the user to send
               janitors on their rounds to maintain the hospital's cleanliness.
             </p>
-            <figure><img src="./images/ClinicHospitalScreenShot.PNG" alt="Screen Shot of Clinic Hospital App">
-              <figcaption>Screen Shot of Clinic Hospital App</figcaption>
+            <figure class="projects__image-container">
+              <img class="projects__image-item" src="./images/ClinicHospitalScreenShot.PNG"
+                alt="Screen Shot of Clinic Hospital App">
+              <figcaption class="projects__image-caption">Screen Shot of Clinic Hospital App</figcaption>
             </figure>
           </li>
         </ul>
       </article>
+      
+      <button class="back-to-top-button"><a href="#TopNav">Back To Top</a></button>
 
       <hr>
 
-      <article class="contact">
+      <article class="contact-me">
         <h2 id="Contact">Contact Info</h2>
-        <p>brian.bross@gmail.com</p>
-        <p>513-600-2301</p>
-        <p><a href:"https://www.linkedin.com/in/brian-bross-4a8223a8>LinkedIn! </a> </p> </main> <footer>
-            <small>any tertiary information, be it legal info or terms and conditions... &copy;Brian Bross</small>
-            </footer>
+        <ul class="contact-me__list">
+          <li class="contact-me__list-item">brian.bross@gmail.com</li>
+          <li class="contact-me__list-item">513-600-2301</li>
+          <li class="contact-me__list-item"><a href="https://www.linkedin.com/in/brian-bross-4a8223a8">LinkedIn</a></li>
+    </main>
+    <footer><small>&copy;Brian Bross</small></footer>
   </div>
 </body>
 
