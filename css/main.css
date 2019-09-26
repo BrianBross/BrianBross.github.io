@@ -25,14 +25,13 @@ html{
     --bodybackgroundcolor: #e0ebe8;
     --linkcolor: #b90e83;
     --title: #fdbd1c;
-    --textcolor: #401231;
+    --textcolor: #77215a;
     --headerbackgroundcolor: #49977f;
     font: 20px/1 "Ubuntu", sans-serif;
 }
-body{
-    background-color: var(--bodybackgroundcolor);
-}
+
 .wrapper{
+    background-color: var(--bodybackgroundcolor);
     margin: 0 auto;
     max-width: 45rem;
     width: 90%;
@@ -59,9 +58,13 @@ img{
 }
 h2{
     margin-bottom: 1rem;
+    color: var(--textcolor);
 }
 ul{
     list-style: none;
+}
+li{
+    color: var(--textcolor);
 }
 article{
     margin: 3rem auto;
@@ -80,21 +83,38 @@ hr{
 footer{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 
 /* Class Formatting */
 .personal-info{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+}
+.personal-info-grid{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: auto auto;
 }
 .personal-info__headshot-caption{
     display: none;
 }
 .personal-info__image-container{
-    width:60rem;
-    margin-right: 1rem;
+    padding: 0;
+}
+.personal-info__content-container{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    justify-content: space-evenly;
+}
+.personal-info__content-title{
+    color: var(--headerbackgroundcolor);
+    text-size-adjust: 1rem;
+}
+.personal-info__content{
+    margin: 0;
 }
 .main-header{
     display: flex;
@@ -104,7 +124,8 @@ footer{
     padding: 1rem 2rem;
 }
 .main-header__title{
-    color: var (--title);
+    color: var(--title);
+    font-size: 3.5rem;
 }
 .navigation__list{
     display: flex;
@@ -128,8 +149,24 @@ footer{
 .contact-me{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+.button-container{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 .back-to-top-button{
-    align-self: right;
+    padding: 0;
+    margin: 0;
+    opacity: .5;
+}
+.footer__image-container{
+    width: 2.5rem;
+    margin: .25rem;
+}
+.footer__image-caption{
+    display: none;
 }

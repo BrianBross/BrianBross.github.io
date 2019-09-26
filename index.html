@@ -23,22 +23,40 @@
 
     <main>
       <article class="personal-info">
-        <figure class="personal-info__image-container" id="About-Me">
-          <img class="personal-info__headshot" src="./images/BrossHeadshot1.jpeg" alt="Brian Bross Headshot">
-          <figcaption class="personal-info__headshot-caption">Brian Bross</figcaption>
-        </figure>
-        <p>
-          I have worked in the food service industry for over 20 years! I studied
-          EECE at Ohio University; however, I pursued the excitement and passion
-          of the food world. Now that my body is older, the industry is taking its
-          toll. So I'm breaking back into the tech world and looking to hit the
-          ground running. I'm eager to meet new people and share some experiences
-          together!
-          <!-- Training software developer tech stack -->
-        </p>
+        <div class="personal-info-grid">
+          <figure class="personal-info__image-container" id="About-Me">
+            <img class="personal-info__headshot" src="./images/BrossHeadshot1.jpeg" alt="Brian Bross Headshot">
+            <figcaption class="personal-info__headshot-caption">Brian Bross</figcaption>
+          </figure>
+          <div class="personal-info__content-container">
+            <div class="personal-info__content">
+              <h3 class="personal-info__content-title">History</h3>
+              <p>
+                I have worked in the food service industry for over 20 years! I studied
+                EECE at Ohio University; however, I pursued the excitement and passion
+                of the food world. Now I'm breaking back into the tech world as a student at We Can Code It bootcamp!
+              </p>
+            </div>
+            <div class="personal-info__content">
+              <h3 class="personal-info__content-title">Skills</h3>
+              <p>
+                Java • HTML • CSS • Flexbox • Grid • TDD • Agile (Scrum) •
+                Object Oriented Programming (OOP)
+              </p>
+            </div>
+            <div class="personal-info__content">
+              <h3 class="personal-info__content-title">Tools</h3>
+              <p>
+                Eclipse • Git • Gradle • Visual Studio Code
+              </p>
+            </div>
+          </div>
+        </div>
       </article>
-      
-      <button class="back-to-top-button"><a href="#TopNav">Back To Top</a></button>
+
+      <article class="button-container">
+        <button class="back-to-top-button"><a href="#TopNav">Back To Top</a></button>
+      </article>
 
       <hr>
 
@@ -79,19 +97,29 @@
           </li>
         </ul>
       </article>
-      
-      <button class="back-to-top-button"><a href="#TopNav">Back To Top</a></button>
-
+      <article class="button-container">
+        <button class="back-to-top-button"><a href="#TopNav">Back To Top</a></button>
+      </article>
       <hr>
 
       <article class="contact-me">
         <h2 id="Contact">Contact Info</h2>
         <ul class="contact-me__list">
-          <li class="contact-me__list-item">brian.bross@gmail.com</li>
+          <li class="contact-me__list-item"><a href="mailto:brian.bross@gmail.com">brian.bross@gmail.com</a></li>
           <li class="contact-me__list-item">513-600-2301</li>
           <li class="contact-me__list-item"><a href="https://www.linkedin.com/in/brian-bross-4a8223a8">LinkedIn</a></li>
     </main>
-    <footer><small>&copy;Brian Bross</small></footer>
+    <footer>
+      <figure class="footer__image-container">
+        <img class="footer__image-item" src="./images/wcciicon.png" alt="WCCI icon">
+        <figcaption class="footer__image-caption">WCCI Icon</figcaption>
+      </figure>
+      <figure class="footer__image-container">
+        <img class="footer__image-item" src="./images/linkedinicon.png" alt="LinkedIn icon">
+        <figcaption class="footer__image-caption">LinkedIn Icon</figcaption>
+      </figure>
+      <small>&copy;Brian Bross 2019</small>
+    </footer>
   </div>
 </body>
 
