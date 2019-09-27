@@ -5,29 +5,11 @@
     padding: 0;
 }
 
-/* ORIGINAL color scheme map:
-#e0ebe8 - light
-   body background color
-#b90e83 - pink purple
-   hyperlink color
-#fdbd1c - orange
-   title
-   hyperlink hover over
-#401231 - dark purple
-   text color
-#49977f - dark green
-   header background color
-  */
-
-
 /* General Page Formatting */
 html{
     --bodybackgroundcolor: #e0ebe8;
-    /* --linkcolor: #55073c; */
     --linkcolor: #b61243;
-    /* --title: #fdbd1c; */
     --title: #fdba00;
-    /* --textcolor: #77215a; */
     --textcolor: rgb(182, 12, 68);
     --headerbackgroundcolor: #49977f;
     font: 20px/1 "Ubuntu", sans-serif;
@@ -36,7 +18,7 @@ html{
 .wrapper{
     background-color: var(--bodybackgroundcolor);
     margin: 0 auto;
-    max-width: 45rem;
+    max-width: 50rem;
     width: 90%;
     display: grid;
     grid-template-rows: 5rem auto 1.2rem;
@@ -90,6 +72,7 @@ footer{
 }
 figcaption{
     font-size: 0.3rem;
+    display: none;
 }
 
 
@@ -102,9 +85,6 @@ figcaption{
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: auto auto;
-}
-.personal-info__headshot-caption{
-    display: none;
 }
 .personal-info__image-container{
     padding: 0;
@@ -146,9 +126,6 @@ figcaption{
 .projects{
     display: flex;
 }
-.projects__image-caption{
-    display: none;
-}
 .projects__list-item{
     margin: 2rem auto;
 }
@@ -171,9 +148,9 @@ figcaption{
 .button-container{
     display: flex;
     justify-content: flex-end;
-    margin: 0;
-    padding: 0;
-    width: 100%;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding: .5rem;  
 }
 .back-to-top-button{
     padding: 0;
@@ -183,7 +160,4 @@ figcaption{
 .footer__image-container{
     width: 2.5rem;
     margin: .25rem;
-}
-.footer__image-caption{
-    display: none;
 }
