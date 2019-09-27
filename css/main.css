@@ -14,7 +14,11 @@ html{
     --headerbackgroundcolor: #49977f;
     font: 20px/1 "Ubuntu", sans-serif;
 }
-
+body{
+    /* background-color: #95c1b4; */
+    background: rgb(73,151,127);
+    background: radial-gradient(circle, rgba(73,151,127,1) 0%, rgba(224,235,232,1) 85%);
+}
 .wrapper{
     background-color: var(--bodybackgroundcolor);
     margin: 0 auto;
