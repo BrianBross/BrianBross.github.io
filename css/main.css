@@ -5,7 +5,7 @@
     padding: 0;
 }
 
-/* color scheme map:
+/* ORIGINAL color scheme map:
 #e0ebe8 - light
    body background color
 #b90e83 - pink purple
@@ -24,9 +24,9 @@
 html{
     --bodybackgroundcolor: #e0ebe8;
     /* --linkcolor: #55073c; */
-    --linkcolor: #b61268;
+    --linkcolor: #b61243;
     /* --title: #fdbd1c; */
-    --title: #fd8700;
+    --title: #fdba00;
     /* --textcolor: #77215a; */
     --textcolor: rgb(182, 12, 68);
     --headerbackgroundcolor: #49977f;
@@ -151,6 +151,9 @@ figcaption{
 }
 .projects__list-item{
     margin: 2rem auto;
+}
+.projects__list-link{
+    text-decoration: underline;
 }
 .contact-me{
     display: flex;
