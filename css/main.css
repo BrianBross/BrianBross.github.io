@@ -162,6 +162,11 @@ figcaption{
     opacity: .5;
 }
 .footer__image-container{
-    width: 2.5rem;
-    margin: .25rem;
+    display: flex;
+    width: .1rem;
+    margin-bottom: 1px;
+    padding: 0;
+}
+.footer__image-item{
+    border-radius: 1px;
 }
