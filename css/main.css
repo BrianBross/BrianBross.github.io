@@ -23,9 +23,12 @@
 /* General Page Formatting */
 html{
     --bodybackgroundcolor: #e0ebe8;
-    --linkcolor: #b90e83;
-    --title: #fdbd1c;
-    --textcolor: #77215a;
+    /* --linkcolor: #55073c; */
+    --linkcolor: #b61268;
+    /* --title: #fdbd1c; */
+    --title: #fd8700;
+    /* --textcolor: #77215a; */
+    --textcolor: rgb(182, 12, 68);
     --headerbackgroundcolor: #49977f;
     font: 20px/1 "Ubuntu", sans-serif;
 }
