@@ -36,7 +36,7 @@ html{
     max-width: 45rem;
     width: 90%;
     display: grid;
-    grid-template-rows: 5rem auto 2rem;
+    grid-template-rows: 5rem auto 2.5rem;
     min-height: 100vh;
 }
 
