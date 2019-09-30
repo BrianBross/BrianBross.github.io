@@ -34,6 +34,8 @@ body{
 p{
     color: var(--textcolor);
     margin: 1rem auto;
+    text-align: justify;
+    text-justify: auto;
 }
 a{
     color: var(--linkcolor);
