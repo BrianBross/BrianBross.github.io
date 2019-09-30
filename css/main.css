@@ -8,9 +8,9 @@
 /* General Page Formatting */
 html{
     --bodybackgroundcolor: #e0ebe8;
-    --linkcolor: #b61243;
+    --linkcolor: #9e133c;
     --title: #fdba00;
-    --textcolor: rgb(182, 12, 68);
+    --textcolor: rgb(202, 5, 71);
     --headerbackgroundcolor: #49977f;
     font: 20px/1 "Ubuntu", sans-serif;
 }
@@ -126,6 +126,10 @@ figcaption{
 }
 .navigation__list-item:last-child{
     margin-right: 0;
+}
+.sidebar{
+    color: var(--linkcolor);
+    font-style: oblique;
 }
 .projects{
     display: flex;
