@@ -10,13 +10,13 @@ html{
     --bodybackgroundcolor: #e0ebe8;
     --linkcolor: #9e133c;
     --title: #fdba00;
-    --textcolor: rgb(202, 5, 71);
+    --textcolor: #ca0547;
     --headerbackgroundcolor: #49977f;
     font: 20px/1 "Ubuntu", sans-serif;
 }
 body{
     background: rgb(73,151,127);
-    background: radial-gradient(circle, rgba(73,151,127,1) 0%, rgba(224,235,232,1) 85%);
+    background: radial-gradient(circle, rgba(73,151,127,1) 0%, rgba(224,235,232,1) 75%);
 }
 .wrapper{
     background-color: var(--bodybackgroundcolor);
