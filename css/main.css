@@ -21,7 +21,7 @@ body{
 .wrapper{
     background-color: var(--bodybackgroundcolor);
     margin: 0 auto;
-    max-width: 50rem;
+    max-width: 55rem;
     width: 90%;
     display: grid;
     grid-template-rows: 5rem auto 1.2rem;
